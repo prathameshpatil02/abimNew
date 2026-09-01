@@ -9,10 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="review.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="ABIM Studio home"><img src="static/images/Logo%20copy.png" alt="ABIM Studio Pvt. Ltd." /></a>
+      <a class="brand brand-text" href="#top" aria-label="ABIM Studio home">ABIM STUDIO</a>
       <nav class="desktop-nav" aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav>
       <a class="header-cta" href="https://wa.me/919960893927" target="_blank" rel="noopener">Request a demo <span>&nearr;</span></a>
       <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
@@ -23,9 +24,9 @@
         <div class="hero-image" role="img" aria-label="ABIM Studio architectural project"></div><div class="hero-scrim"></div>
         <div class="hero-topline"><span>01 - 06</span><span>Achieve Better Integrated Models</span><span>Scroll to explore &darr;</span></div>
         <div class="hero-content">
-          <p class="eyebrow light reveal">Your best BIM partner</p>
+          <p class="eyebrow hero-eyebrow light reveal">Your best BIM partner</p>
           <h1 class="reveal">Virtually build<br />future <i>projects</i> today.</h1>
-          <div class="hero-bottom reveal"><p>Intelligent architecture and BIM services, built around collaboration, clarity and exceptional outcomes.</p><a class="round-link" href="#work" aria-label="Explore ABIM Studio expertise">&darr;</a></div>
+          <div class="hero-bottom reveal"><p>We create data-rich BIM Models that brings design, coordination and construction together.</p><a class="round-link" href="#work" aria-label="Explore ABIM Studio expertise">&darr;</a></div>
         </div>
         <div class="hero-number" aria-hidden="true">A<span>/</span></div>
       </section>
@@ -36,10 +37,12 @@
       <section class="projects" id="work">
         <div class="projects-head"><p class="section-label reveal">[ 02 ] - Studio expertise</p><p class="reveal">Creativity, functionality<br />and sustainability.</p></div>
         <div class="project-grid">
-          <article class="project project-feature reveal"><a href="#services" class="project-image"><img src="static/images/3d%20modeling.webp" alt="3D architectural model" /><span class="project-arrow">&nearr;</span></a><div class="project-meta"><span>01 / Digital craft</span><h3>3D Modelling</h3></div></article>
-          <article class="project project-tall reveal"><a href="#services" class="project-image"><img src="static/images/Architectural%20Visualization.webp" alt="Architectural visualisation" /><span class="project-arrow">&nearr;</span></a><div class="project-meta"><span>02 / Seeing ahead</span><h3>Architectural Visualization</h3></div></article>
-          <article class="project project-wide reveal"><a href="#services" class="project-image"><img src="static/images/Sustainable%20Design%20Solutions.webp" alt="Sustainable building design" /><span class="project-arrow">&nearr;</span></a><div class="project-meta"><span>03 / Responsible design</span><h3>Sustainable solutions</h3></div></article>
-          <article class="project project-small reveal"><a href="#services" class="project-image"><img src="static/images/Interior%20fit.jpg" alt="Interior fit out" /><span class="project-arrow">&nearr;</span></a><div class="project-meta"><span>04 / Made for life</span><h3>Interior Fit-outs</h3></div></article>
+          <article class="project project-feature reveal"><a href="services.html" class="project-image"><img src="static/images/3D%20Visualisation.png" alt="3D architectural model" /><span class="project-arrow">&nearr;</span></a><div class="project-meta"><span>01 / Digital craft</span><h3>3D Modelling</h3></div></article>
+          <article class="project project-tall reveal"><a href="services.html" class="project-image"><img src="static/images/ChatGPT-Image%20copy.jpeg" alt="Architectural visualisation" /><span class="project-arrow">&nearr;</span></a><div class="project-meta"><span>02 / Seeing ahead</span><h3>Architectural Visualization</h3></div></article>
+          <article class="project project-wide reveal"><a href="services.html" class="project-image"><img src="static/images/Sustainability.png" alt="Sustainable building design" /><span class="project-arrow">&nearr;</span></a><div class="project-meta"><span>03 / Responsible design</span><h3>Sustainable Design Solutions</h3></div></article>
+          <article class="project project-small reveal"><a href="services.html" class="project-image"><img src="static/images/Interior%20fit.jpg" alt="Interior fit-out" /><span class="project-arrow">&nearr;</span></a><div class="project-meta"><span>04 / Made for life</span><h3>Interior Fit-outs</h3></div></article>
+          <article class="project project-clash reveal"><a href="services.html" class="project-image"><img src="static/images/Project%20clash%20coordination.png" alt="Project clash coordination" /><span class="project-arrow">&nearr;</span></a><div class="project-meta"><span>05 / Coordinated delivery</span><h3>Project Clash Coordination</h3></div></article>
+          <article class="project project-documentation reveal"><a href="services.html" class="project-image"><img src="static/images/Construction%20Documentation.jpg%20copy.jpeg" alt="Construction documentation" /><span class="project-arrow">&nearr;</span></a><div class="project-meta"><span>06 / Built with clarity</span><h3>Construction Documentation</h3></div></article>
         </div>
         <a class="all-projects reveal" href="services.html">Explore all six services <span>&nearr;</span></a>
       </section>
@@ -51,6 +54,8 @@
           <article class="service reveal"><span>02</span><h3>Architectural Visualization</h3><p>High-quality images and animation that make confident decisions possible before construction.</p><span class="service-icon">&nearr;</span></article>
           <article class="service reveal"><span>03</span><h3>Project Clash Coordination</h3><p>Potential conflicts identified and resolved early for seamless project execution.</p><span class="service-icon">&nearr;</span></article>
           <article class="service reveal"><span>04</span><h3>Construction Documentation</h3><p>Precise drawings and specifications that protect design intent through construction.</p><span class="service-icon">&nearr;</span></article>
+          <article class="service reveal"><span>05</span><h3>Interior Fit-outs</h3><p>Functional, expressive interiors shaped around the people who use them every day.</p><span class="service-icon">&nearr;</span></article>
+          <article class="service reveal"><span>06</span><h3>Sustainable Design Solutions</h3><p>Responsible strategies that balance environmental performance, beauty and long-term value.</p><span class="service-icon">&nearr;</span></article>
         </div>
       </section>
       <section class="studio" id="studio"><div class="studio-image reveal"><img src="static/images/why%20abim%20page.webp" alt="ABIM Studio architectural work" /></div><div class="studio-copy"><p class="section-label reveal">[ 05 ] - The studio</p><h2 class="reveal">A practice for<br />the <i>possible.</i></h2><p class="reveal">We combine innovative design thinking with BIM expertise to deliver intelligent, efficient building models and superior project outcomes.</p><a class="text-link reveal" href="about.html">Meet ABIM Studio <span>&nearr;</span></a></div></section>

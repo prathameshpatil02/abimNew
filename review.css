@@ -1,0 +1,17 @@
+/* Homepage review updates */
+.site-header { position: fixed; }
+.page-shell .site-header { position: fixed; }
+.desktop-nav { margin-left: auto; gap: 2.4vw; }
+.header-cta { margin-left: 3vw; }
+.brand-text { font-size: 20px; font-weight: 500; letter-spacing: .02em; white-space: nowrap; }
+.hero-image { background-image: url("static/images/abimstudio.png"); filter: saturate(.8) contrast(1.04); }
+.hero-eyebrow { font-size: 17px; }
+.project-clash { margin-top: 6vw; }
+.project-documentation { margin-top: 2vw; }
+.project-clash .project-image { aspect-ratio: 1.08; }
+.project-documentation .project-image { aspect-ratio: 1.42; }
+
+@media (max-width: 760px) {
+  .brand-text { font-size: 17px; }
+  .project-clash, .project-documentation { margin-top: 0; }
+}
