@@ -6,12 +6,21 @@
 .brand-text { font-size: 20px; font-weight: 500; letter-spacing: .02em; white-space: nowrap; }
 .hero-image { background-image: url("static/images/abimstudio.png"); filter: saturate(.8) contrast(1.04); }
 .hero-eyebrow { font-size: 17px; }
-.project-clash { margin-top: 6vw; }
-.project-documentation { margin-top: 2vw; }
-.project-clash .project-image { aspect-ratio: 1.08; }
-.project-documentation .project-image { aspect-ratio: 1.42; }
+.projects .project-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(28px, 4vw, 64px) 2vw; align-items: start; }
+.projects .project { grid-column: auto; margin: 0; }
+.projects .project .project-image { aspect-ratio: 4 / 3; }
+.project-meta { display: block; margin-top: 16px; }
+.project-meta h3 { margin-top: 8px; }
+.project-description { color: var(--muted); font-size: 14px; line-height: 1.6; margin: 12px 0 0; max-width: 34ch; }
 
 @media (max-width: 760px) {
   .brand-text { font-size: 17px; }
-  .project-clash, .project-documentation { margin-top: 0; }
+  .projects .project-grid { display: grid; grid-template-columns: 1fr; gap: 42px; }
+  .projects .project { margin: 0 !important; }
+  .projects .project .project-image { aspect-ratio: 4 / 3; }
+  .project-description { font-size: 14px; max-width: 38ch; }
+}
+
+@media (min-width: 761px) and (max-width: 1050px) {
+  .projects .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
