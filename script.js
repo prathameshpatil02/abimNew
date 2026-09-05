@@ -31,3 +31,17 @@ document.querySelector('[data-whatsapp-form]')?.addEventListener('submit', (even
   const message = `Hello ABIM Studio, I am ${form.get('name')}.\nEmail: ${form.get('email')}\n\nProject enquiry:\n${form.get('message')}`;
   window.open(`https://wa.me/919960893927?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
 });
+
+const companyEmail = 'aspl.nilesh@abimstudio.com';
+document.querySelectorAll('a[href="mailto:admin@abimstudio.in"]').forEach((link) => {
+  link.href = `mailto:${companyEmail}`;
+  link.textContent = companyEmail;
+});
+
+document.querySelectorAll('.brand img').forEach((logo) => {
+  const brand = logo.closest('.brand');
+  if (!brand) return;
+  logo.remove();
+  brand.textContent = 'ABIM STUDIO';
+  brand.style.cssText = 'font-size:20px;font-weight:500;letter-spacing:.02em;white-space:nowrap';
+});
